@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="login-section">
+    <h2>Login to Your Bank Account</h2>
+    <input type="text" id="account-name" placeholder="Enter your name">
+    <button id="login-btn">Login</button>
+    <button id="create-account-btn">Create New Account</button>
+  </div>
+
+  <div id="account-section" style="display: none;">
+    <h2>Welcome, <span id="account-holder-name"></span></h2>
+    <p>Your current balance is: $<span id="balance">0</span></p>
+    <input type="number" id="deposit-amount" placeholder="Amount to deposit">
+    <button id="deposit-btn">Deposit</button>
+    <input type="number" id="withdraw-amount" placeholder="Amount to withdraw">
+    <button id="withdraw-btn">Withdraw</button>
+    <button id="logout-btn">Logout</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+  
+</body>
+</html>
